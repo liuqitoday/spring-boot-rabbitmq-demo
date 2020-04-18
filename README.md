@@ -23,7 +23,7 @@
 
 ### 交换器
 不同类型的交换器有着不同的消息分发策略，常用的Exchange类型有以下几种：direct（默认）、fanout、topic、headers
-此处说明一下RoutingKey、BindingKey。路由键的作用是将消息路由到交换器，绑定键的作用是将交换器与队列建立关联关系。
+此处说明一下RoutingKey、BindingKey。
 #### direct
 direct是默认的交换器模式，也是最简单的。该模式下，路由键与绑定键一致，路由键与队列名完全匹配。
 例如，消息路由键 "liuqitech" 只能匹配 "liuqitech" 绑定，不匹配 "liuqitech.info" 这类绑定。 
